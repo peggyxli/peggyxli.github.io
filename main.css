@@ -1,0 +1,90 @@
+body {
+	font: 400 15px Montserrat, sans-serif;
+	line-height: 1.8;
+	color: #011d44;	
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #011d44;
+	z-index: 9999;
+	border: 0;
+	border-radius: 0;
+	padding: 15px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar a:hover, .navbar-nav li.active a {
+  color: #81c0e4 !important;
+}
+
+h1 {
+	font: 700 36px Merriweather, serif !important;
+	margin-top: 10px;
+}
+
+.jumbotron {
+	margin-top: 80px;
+	padding: 60px 0;
+	background-color: #f2f8fc;
+	color: #000215;
+}
+
+.thumbnail {
+	box-shadow: 0 2px 5px rgba(0,0,0,.15);
+	transition: 0.3s;
+	border-radius: 6px;
+	padding: 0;
+	border: 0;
+}
+
+.thumbnail:hover {
+	box-shadow: 0 6px 15px rgba(0,0,0,.15);
+}
+
+.thumbnail img {
+	border-radius: 6px 6px 0 0;
+}
+
+.card-block {
+	padding: 16px;
+}
+
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.row-flex-wrap {
+	-webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+	 margin:-.2px; /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+	width:100%;
+}
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 100%;
+	flex-flow: column nowrap;
+}
+
+.flex-grow {
+	display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
