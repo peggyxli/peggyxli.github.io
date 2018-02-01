@@ -48,6 +48,13 @@ h1 {
 	color: #000215;
 }
 
+@media only screen and (min-width: 992px) {
+.hello-world {
+	justify-content: flex-end;
+	border-right: 5px solid;
+}
+}
+
 #projects {
 	padding-top: 50px;
 	padding-bottom: 50px;
