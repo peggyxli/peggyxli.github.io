@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ExcessEats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="cards.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="cards.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="logo.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="sign-in.html">SIGN IN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="app" class="container-fluid bg-grey">
+  <br>
+  <div class="row">
+    <div class="col-sm-9 form-group">
+      <input class="form-control" placeholder="Search by restaurant or meal" type="text" style="display:inline-block; width:89%" required>
+	  <div class="form-group-btn" style="padding-left:10px; display:inline-block">
+		<button type="button" class="btn btn-danger" style="background-color:#ff6045">Search</button>
+	  </div><br><br>
+	  <div class="input-group-btn" style="display:inline-block">
+		<button type="button" id="sort-by-distance" class="btn btn-danger" style="background-color:#ff6045; margin-right:10px">Sort by distance</button>
+		<button type="button" id="sort-by-rating" class="btn btn-danger" style="background-color:#ff6045; margin-right:10px">Sort by rating</button>
+		<button type="button" id="sort-by-expire" class="btn btn-danger" style="background-color:#ff6045; margin-right:10px">Sort by expiration</button>
+		<button type="button" id="sort-by-price" class="btn btn-danger" style="background-color:#ff6045">Sort by price</button>
+	  </div><br><br>
+	  <div id="my-cards"></div>
+	  </script>
+    </div>
+    <div class="col-sm-3">
+      	<div id="googleMap" style="height:800px; width:100%"></div>
+		<script>
+		function myMap() {
+		var myCenter = new google.maps.LatLng(40.6997577, -73.97735419999998);
+		var myLatLng1 = new google.maps.LatLng(40.7426354, -73.97472920000001);
+		var myLatLng2 = new google.maps.LatLng(40.77925499999999, -73.985884);
+		var myLatLng3 = new google.maps.LatLng(40.7526493, -73.98703130000001);
+		var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker1 = new google.maps.Marker({position:myLatLng1});
+		marker1.setMap(map);
+		var marker2 = new google.maps.Marker({position:myLatLng2});
+		marker2.setMap(map);
+		var marker3 = new google.maps.Marker({position:myLatLng3});
+		marker3.setMap(map);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlN5LZyXBfqQucdTtGhxksCr4gMB4jNeI&callback=myMap"></script>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
