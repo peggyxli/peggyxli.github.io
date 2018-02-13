@@ -1,0 +1,97 @@
+body {
+	font: 300 1.5em Montserrat, sans-serif;
+	line-height: 1.8;
+	color: #1D2B52;	
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #010027;
+	z-index: 9999;
+	border: 0;
+	border-radius: 0;
+	padding: 15px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar a:hover, .navbar-nav li.active a {
+	color: #d09cf3 !important;
+}
+
+nav.navbar.shrink {
+	padding: 0 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #81c0e4;
+}
+
+h1 {
+	font: 700 36px Merriweather, serif !important;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+#about {
+	margin-bottom: 0px;
+	padding: 140px 0 60px;
+	background-color: #f6f8fa;
+}
+
+#about h1 {
+	color: #F356AF;
+}
+@media (min-width: 992px) {
+.hello-world {
+	justify-content: flex-end;
+	border-right: 5px solid #1D2B52;
+}
+}
+
+#projects {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.row-flex, .row-flex > div[class*='col-'] {  
+  display: flex;
+	display: -webkit-flex;
+  flex:1 1 auto;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.flex-col {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 100%;
+	flex-flow: column nowrap;
+}
+
+#quiz-table {
+	margin: 16px auto;
+}
+
+#quiz-table tr {
+	border-bottom-width: 1px;
+}
+
+#quiz-table td {
+	padding: 0 8px;
+}
+
+#results {
+	text-align: center;
+	background-color: #f6f8fa;
+}
