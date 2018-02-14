@@ -7,7 +7,7 @@ body {
 .navbar {
 	margin-bottom: 0;
 	background-color: #010027;
-	z-index: 9999;
+	z-index: 1000;
 	border: 0;
 	border-radius: 0;
 	padding: 15px;
@@ -38,29 +38,25 @@ nav.navbar.shrink {
 
 h1 {
 	font: 700 36px Merriweather, serif !important;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
-#about {
+#header {
 	margin-bottom: 0px;
-	padding: 140px 0 60px;
+	padding: 140px 0 60px; /*+80 for navbar*/
 	background-color: #f6f8fa;
+	text-align:center
 }
 
-#about h1 {
+#header h1 {
 	color: #F356AF;
 }
-@media (min-width: 992px) {
-.hello-world {
-	justify-content: flex-end;
-	border-right: 5px solid #1D2B52;
-}
-}
 
-#projects {
-	padding-top: 50px;
-	padding-bottom: 50px;
+#quiz {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
 }
 
 .row-flex, .row-flex > div[class*='col-'] {  
@@ -83,15 +79,32 @@ h1 {
 	margin: 16px auto;
 }
 
-#quiz-table tr {
-	border-bottom-width: 1px;
+#quiz-table th {
+	text-align:center;
 }
 
 #quiz-table td {
+	border-top: 1px solid #eee;
 	padding: 0 8px;
 }
 
+#quiz-table input[type=radio] {
+	margin:8px 0;
+}
+
+#quiz-table .button-cell {
+	border: 0px none;
+	padding: 8px;
+}
+
+#quiz-table button {
+	width:100%;
+}
+
+.red-text {
+	color: red;
+}
+
 #results {
-	text-align: center;
 	background-color: #f6f8fa;
 }
