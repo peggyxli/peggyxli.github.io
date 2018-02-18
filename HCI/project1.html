@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="project1.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -22,12 +23,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span> 
 			</button>
-			<a class="navbar-brand" href="peggyli.xyz">Peggy Li</a>
+			<a class="navbar-brand" href="http://peggyli.xyz">Peggy Li</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="peggyli.xyz#about">About</a></li>
-				<li><a href="peggyli.xyz#projects">Portfolio</a></li>
+				<li><a href="http://peggyli.xyz#about">About</a></li>
+				<li><a href="http://peggyli.xyz#projects">Portfolio</a></li>
 				<!--<li><a href="resume.html">Resume</a></li>-->
 				<li><a href="https://github.com/peggyxli">GitHub</a></li>
 				<!--<li><a href="contact.html">Contact</a></li>-->
@@ -169,32 +170,63 @@
 			<tr>
 				<td>Is Pumpkin adorable?</td>
 				<td><input type="radio" name="q24" value="yes" class="peggy"></td>
-				<td><input type="radio" name="q24" value="no"></td>
+				<td><input type="radio" name="q24" value="no"  data-toggle="modal" data-target="#pumpkin-modal"></td>
 			</tr>
 			<tr>
-				<td colspan = "4" class="button-cell"><button type="submit" class="btn" data-toggle="modal" data-target="#quiz-modal" onclick="return submitQuiz();">Submit</button></td>
+				<td colspan = "4" class="button-cell"><button type="submit" class="btn" onclick="return submitQuiz();">Submit</button></td>
 			</tr>
 		</form></table>
 	</div>
 </div>
 
-<!--Modal-->
 <div id="quiz-modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-    
-		<!-- Modal content-->
-		<div class="modal-content">
+		<div class="modal-content bg-white">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Modal Header</h4>
+				<h1 id="result-name"></h1>
+				<span id="result-description"></span>
 			</div>
-			<div id="results" class="modal-body"></div>
+			<div class="modal-body bg-light">
+				<div class="row">
+					<div id="result-image" class="col-sm-4"></div>
+					<div id="all-results" class="col-sm-8"></div>
+				</div>
+			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<div class="row row-flex">
+					<div id="image-source" class="col-sm-10"></div>
+					<div class="col-sm-2"><button type="button" class="btn" data-dismiss="modal">Close</button></div>
+				</div>
 			</div>
 		</div>
-      
     </div>
 </div>
+
+<div id="pumpkin-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content bg-white">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h1>What is wrong with you?!</h1>
+				How can you not think that Pumpkin is adorable? Just look at her. She's basically the definition of adorable.
+			</div>
+			<div class="modal-body bg-light">
+				<div class="row">
+					<div class="col-sm-4"><img src="Pumpkin1.jpg"></div>
+					<div class="col-sm-4"><img src="Pumpkin2.jpg"></div>
+					<div class="col-sm-4"><img src="Pumpkin3.jpg"></div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="row row-flex">
+					<div class="col-sm-10"></div>
+					<div class="col-sm-2"><button type="button" class="btn" data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
 </body>
 </html>

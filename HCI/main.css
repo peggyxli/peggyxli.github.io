@@ -1,3 +1,4 @@
+/*Common elements*/
 body {
 	font: 300 1.5em Montserrat, sans-serif;
 	line-height: 1.8;
@@ -21,25 +22,31 @@ body {
 }
 
 .navbar a:hover, .navbar-nav li.active a {
-	color: #d09cf3 !important;
+	color: #77c4e0 !important;
 }
 
 nav.navbar.shrink {
 	padding: 0 15px;
 }
 
+/*Mobile navbar*/
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #fff;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background-color: #81c0e4;
+/*Mobile navbar*/
+.navbar-default .navbar-toggle:focus{
+	background-color: #010027;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #3dabd2;
 }
 
 h1 {
 	font: 700 36px Merriweather, serif !important;
 	margin-top: 8px;
 	margin-bottom: 8px;
+	color: #FE5AA3;
 }
 
 #header {
@@ -49,62 +56,42 @@ h1 {
 	text-align:center
 }
 
-#header h1 {
-	color: #F356AF;
+.btn, .btn:hover, .btn:focus {
+	color: #fff;
 }
 
-#quiz {
-	padding-top: 20px;
-	padding-bottom: 20px;
-
+.btn {
+	background-color: #011C4B;
+	transition: 0.5s;
+	width: 100%;
 }
+
+.btn:hover {
+	background-color: #3dabd2;
+}
+
+/*Add-able classes*/
 
 .row-flex, .row-flex > div[class*='col-'] {  
-  display: flex;
+	display: flex;
 	display: -webkit-flex;
-  flex:1 1 auto;
+	flex:1 1 auto;
 	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
-  align-content: flex-start;
+	align-content: flex-start;
 }
 
 .flex-col {
-  display: flex;
-  display: -webkit-flex;
-  flex: 1 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex: 1 100%;
 	flex-flow: column nowrap;
 }
 
-#quiz-table {
-	margin: 16px auto;
+.bg-white {
+	background-color: #fff;
 }
 
-#quiz-table th {
-	text-align:center;
-}
-
-#quiz-table td {
-	border-top: 1px solid #eee;
-	padding: 0 8px;
-}
-
-#quiz-table input[type=radio] {
-	margin:8px 0;
-}
-
-#quiz-table .button-cell {
-	border: 0px none;
-	padding: 8px;
-}
-
-#quiz-table button {
-	width:100%;
-}
-
-.red-text {
-	color: red;
-}
-
-#results {
+.bg-light {
 	background-color: #f6f8fa;
 }

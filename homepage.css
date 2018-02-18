@@ -1,0 +1,78 @@
+@media (min-width: 992px) {
+.hello-world {
+	justify-content: flex-end;
+	border-right: 5px solid #1D2B52;
+}
+}
+
+#projects {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.card {
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.15);
+	transition: 0.3s;
+	border-radius: 6px;
+	border: 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: column nowrap;
+	-webkit-flex-flow: column nowrap;
+	flex: 1 100%;
+	margin-bottom: 30px;
+	background-color: #f6f8fa;
+	line-height: 1.5;
+}
+
+.card img {
+	border-radius: 6px 6px 0 0;
+	width: 100%;
+}
+
+.card > * {
+    margin-bottom: 16px;
+}
+
+.card > div {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.card .desc * {
+	margin-top: 0;
+}
+
+.card h2 {
+	height: 39px;
+	font-size: 1em;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 8px;
+	color: #F356AF;
+}
+
+.card p {
+	margin-bottom: 0;
+}
+
+.card p:before {
+	content: "- "
+}
+
+.card .lang {
+	margin-top: auto;
+	margin-bottom: 8px;
+}
+
+.card .left-button {
+	padding-left: 0px;
+	padding-right: 4px;
+}
+
+.card .right-button {
+	padding-left: 4px;
+	padding-right: 0px;
+}
