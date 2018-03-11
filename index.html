@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Peggy Li</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="homepage.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Peggy Li</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="homepage.css">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,600" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="main.js"></script>
 </head>
 <body>
@@ -38,14 +37,15 @@
 
 <div id="header">
 	<div class="container">
-		<div class="row row-flex">
-			<div class="col-md-4 flex-col hello-world">
-				<h1 style="margin: auto 0;">Hello World!</h1>
-			</div>
-			<div class="col-md-8 flex-col">
-				<p style="margin: 16px 0">My name is Peggy Li and I'm an aspiring software engineer, who is currently majoring in Computer Science and Marketing at Brooklyn College.  I love creating things and solving problems, and, consequently, am passionate about programming and graphic design.<br><br>Below are a few of the projects I have created as I learn more about computer science and develop new skills.</p>
-			</div>
-		</div>
+		<h1>Hello, world!</h1>
+		<span>Welcome to my portfolio!</span>
+	</div>
+</div>
+
+<div id ="about" class="container">
+	<div class="content">
+		<h2>About Me</h2>
+			<p>My name is Peggy Li and I'm an aspiring software engineer, who is currently majoring in Computer Science and Marketing at Brooklyn College.  I love creating things and solving problems, and, consequently, am passionate about programming and graphic design.<br><br>Below are a few of the projects I have created as I learn more about computer science and develop new skills.</p>
 	</div>
 </div>
 
@@ -56,12 +56,12 @@
 			<div class="card">
 				<img src="pl2.png" alt="Personal Website">
 				<div class="desc">
-					<h2>Personal Website</h2>
+					<h3>Personal Website</h3>
 					<p>A website I created to showcase my project and skills to potential employers. (You're on it right now!)</p>
 				</div>
-				<div class="lang">HTML, CSS, Javascript, Bootstrap</div>
+				<div class="lang">Made with: HTML, CSS, Javascript, Bootstrap</div>
 				<div class="row">
-					<div class="col-xs-6 left-button"><a class="btn" href="https://github.com/peggyxli/peggyxli.github.io">View Code</a></div>
+					<div class="col-xs-6 left-button"><a class="card-action" href="https://github.com/peggyxli/peggyxli.github.io">View Code</a></div>
 				</div>
 			</div>
 		</div>
@@ -69,15 +69,15 @@
         <div class="card">
             <img src="battlecode.png" alt="Battlecode Screenshot">
             <div class="desc">
-				<h2>MIT Battlecode 2018: Return of the A-Star</h2>
+				<h3>MIT Battlecode 2018: Return of the A-Star</h3>
 				<p>AI player that makes decisions and controls units in a real-time strategy game</p>
 				<p>Uses A-Star algorithm for pathfinding</p>
 				<p>Finds, and limits units to, the largest contiguous area on the map</p>
 				<p>Placed in the top 64 out of 1091 teams globally</p>
             </div>
-            <div class="lang">Python</div>
+            <div class="lang">Made with: Python</div>
             <div class="row">
-                <div class="col-xs-6 left-button"><a class="btn" href="https://github.com/peggyxli/battlecode-project">View Code</a></div>
+                <div class="col-xs-6 left-button"><a class="card-action" href="https://github.com/peggyxli/battlecode-project">View Code</a></div>
             </div>
         </div>
     </div>
@@ -85,13 +85,13 @@
         <div class="card">
             <img src="excess-eats.png" alt="ExcessEats">
             <div class="desc">
-				<h2>CUNY Hackathon Fall 2017: ExcessEats</h2>
+				<h3>CUNY Hackathon Fall 2017: ExcessEats</h3>
 				<p>Developed front-end for interactive web application with Google Maps component</p>
 			</div>
-            <div class="lang">HTML, CSS, Javascript, jQuery, Bootstrap</div>
+            <div class="lang">Made with: HTML, CSS, Javascript, jQuery, Bootstrap</div>
             <div class="row">
-                <div class="col-xs-6 left-button"><a class="btn" href="https://github.com/peggyxli/excess-eats-frontend">View Code</a></div>
-                <div class="col-xs-6 right-button"><a class="btn" href="http://peggyli.xyz/excess-eats">View Project</a></div>
+                <a class="card-action" style="margin-right:8px" href="https://github.com/peggyxli/excess-eats-frontend">View Code</a>
+                <a class="card-action" href="http://peggyli.xyz/excess-eats">View Project</a>
             </div>
         </div>
 	</div>
@@ -99,12 +99,12 @@
         <div class="card">
             <img src="go-home.png" alt="GoHome!">
             <div class="desc">
-				<h2>GoHome! Console Game</h2>
+				<h3>GoHome! Console Game</h3>
 				<p>Console-based board game</p>
 			</div>
-            <div class="lang">C++</div>
+            <div class="lang">Made with: C++</div>
             <div class="row">
-                <div class="col-xs-6 left-button"><a class="btn">View Code</a></div>
+                <div class="col-xs-6 left-button"><a class="card-action">View Code</a></div>
             </div>
         </div>
     </div>
@@ -112,13 +112,13 @@
         <div class="card">
             <img src="robotics-map.png" alt="Robotics Map">
             <div class="desc">
-				<h2>Robotics: Path-planning & Navigation</h2>
+				<h3>Robotics: Path-planning & Navigation</h3>
 				<p>Finds a path around several obstacles by implementing the A* algorithm</p>
 				<p>Also navigates a simulated robot through the resulting path</p>
 			</div>
-            <div class="lang">C++</div>
+            <div class="lang">Made with: C++</div>
             <div class="row">
-                <div class="col-xs-6 left-button"><a class="btn" href="https://github.com/peggyxli/robotics-current/blob/master/make-plan.cc">View Code</a></div>
+                <div class="col-xs-6 left-button"><a class="card-action" href="https://github.com/peggyxli/robotics-current/blob/master/make-plan.cc">View Code</a></div>
             </div>
         </div>
     </div>
@@ -126,13 +126,13 @@
         <div class="card">
             <img src="sas.png" alt="SAS Screenshot">
             <div class="desc">
-				<h2>SAS Website</h2>
+				<h3>SAS Website</h3>
 				<p>Designed and developed website for video game group</p>
 			</div>
-            <div class="lang">HTML, CSS</div>
+            <div class="lang">Made with: HTML, CSS</div>
             <div class="row">
-                <div class="col-xs-6 left-button"></div>
-                <div class="col-xs-6 right-button"><a class="btn" style="width: 100%" href="http://sas-demo.weebly.com">View Project</a></div>
+                <div class="col-xs-4 left-button"></div>
+                <div class="col-xs-6 right-button"><a class="card-action" style="width: 100%" href="http://sas-demo.weebly.com">View Project</a></div>
             </div>
         </div>
     </div>

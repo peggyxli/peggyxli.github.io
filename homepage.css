@@ -13,7 +13,7 @@
 .card {
 	box-shadow: 0 0 5px 1px rgba(0,0,0,.15);
 	transition: 0.3s;
-	border-radius: 6px;
+	border-radius: 2px;
 	border: 0;
 	display: flex;
 	display: -webkit-flex;
@@ -21,13 +21,15 @@
 	-webkit-flex-flow: column nowrap;
 	flex: 1 100%;
 	margin-bottom: 30px;
-	background-color: #f6f8fa;
+	background-color: #fff;
 	line-height: 1.5;
+	color: rgba(0, 0, 0, 0.54);
 }
 
 .card img {
-	border-radius: 6px 6px 0 0;
+	border-radius: 2px 2px 0 0;
 	width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .card > * {
@@ -43,15 +45,15 @@
 	margin-top: 0;
 }
 
-.card h2 {
+.card h3 {
 	height: 39px;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: 700;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	margin-bottom: 8px;
-	color: #F356AF;
+	color: #212121;
 }
 
 .card p {
@@ -75,4 +77,17 @@
 .card .right-button {
 	padding-left: 4px;
 	padding-right: 0px;
+}
+
+.card-action {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #ff80ab;
+	padding: 8px;
+}
+
+.card-action:hover {
+	color: #ff80ab;
+	background-color: #ffe0f1;
+	text-decoration: none;
 }
