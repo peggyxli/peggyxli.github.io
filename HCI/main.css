@@ -1,20 +1,18 @@
 /*Common elements*/
 body {
-	font: 300 1.5em Montserrat, sans-serif;
+	font: 400 1.4rem "Open Sans", sans-serif;
 	line-height: 1.8;
-	color: #1D2B52;	
+	color: #212121;
+	background-color: #FAFAFA;
 }
 
 .navbar {
-	margin-bottom: 0;
-	background-color: #010027;
+	background-color: #34515e;
 	z-index: 1000;
 	border: 0;
-	border-radius: 0;
 	padding: 15px;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	font-weight: 400;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -42,18 +40,41 @@ nav.navbar.shrink {
 	background-color: #3dabd2;
 }
 
-h1 {
-	font: 700 36px Merriweather, serif !important;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	color: #FE5AA3;
-}
-
 #header {
 	margin-bottom: 0px;
 	padding: 140px 0 60px; /*+80 for navbar*/
-	background-color: #f6f8fa;
+	background-color: #607d8b;
 	text-align:center
+}
+
+#header h1 {
+	font: 400 56px "Bree Serif", serif !important;
+	margin: 0;
+	color: #fff;
+}
+
+#header span {
+	font-weight: 400;
+	font-size: 20px;
+	color: #8eacbb;
+	margin-bottom: 8px;
+}
+
+#header .container {
+	padding-bottom: 12px;
+}
+
+.container > .content {
+	padding-bottom: 60px;
+    padding-top: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+	font: 400 34px "Bree Serif", serif;
+	color: #607d8b;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .btn, .btn:hover, .btn:focus {

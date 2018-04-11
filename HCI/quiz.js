@@ -74,9 +74,12 @@ function submitQuiz() {
 			my_html+=players[i].getInfo();
 		document.getElementById("all-results").innerHTML = my_html;	
 			
-		if (document.getElementsByClassName("eugene")[0].checked) //hidden easter egg
+		if (document.getElementsByClassName("eugene")[0].checked) {//hidden easter egg
+			var snd = new Audio("thunder.mp3");
+			snd.play();
 			players[0] = new Player("eugene", "eugene", "Eugene.gif", "You are the all-knowing DM who sets up the game, controls the NPCs, and guides the <s>idiots</s> players.",
 									"<a href=\"https://giphy.com/gifs/orb-fQIscqiDqDF1m\">GIPHY - Orb GIF</a>");
+		}
 		document.getElementById("result-name").innerHTML = "You are " + players[0].name + ".";
 		document.getElementById("result-description").innerHTML = players[0].description;
 		document.getElementById("result-image").innerHTML = "<img src=\""+players[0].image_url+"\">";

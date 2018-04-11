@@ -1,7 +1,6 @@
 #quiz {
 	padding-top: 20px;
 	padding-bottom: 20px;
-
 }
 
 #quiz-table {
@@ -41,11 +40,8 @@
 	border-color: #eee;
 }
 
-#image-source {
-	text-align: left;
-	display: flex;
-	justify-content:center;
-	flex-direction: column
+#result-image {
+	padding-bottom: 15px;
 }
 
 .modal img {
@@ -70,6 +66,13 @@
 	height: 18px;
 }
 
+#image-source {
+	text-align: left;
+	display: flex;
+	justify-content:center;
+	flex-direction: column
+}
+
 @media (min-width: 768px) {
 #quiz-modal .modal-dialog {
 	width: 80%;
@@ -77,6 +80,7 @@
 }
 #result-image {
 	padding-right: 0px;
+	padding-bottom: 0px;
 }
 #pumpkin-modal .modal-dialog {
 	width: 80%;
