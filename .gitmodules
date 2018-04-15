@@ -1,3 +1,6 @@
 [submodule "whack-a-prof"]
 	path = whack-a-prof
 	url = https://github.com/peggyxli/whack-a-prof.git
+[submodule "bq-girlhacks-sp2018"]
+	path = bq-girlhacks-sp2018
+	url = https://github.com/peggyxli/bq-girlhacks-sp2018.git
