@@ -4,3 +4,6 @@
 [submodule "bq-girlhacks-sp2018"]
 	path = bq-girlhacks-sp2018
 	url = https://github.com/peggyxli/bq-girlhacks-sp2018.git
+[submodule "stroop-effect-test"]
+	path = stroop-effect-test
+	url = https://github.com/peggyxli/stroop-effect-test.git
