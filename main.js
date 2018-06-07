@@ -1,7 +1,4 @@
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-    $('nav').addClass('shrink');
-  } else {
-    $('nav').removeClass('shrink');
-  }
+$(".card button").click(function() {
+    $(this).parent().next().stop(true).slideToggle(500);
+    $(this).toggleClass("rotate-me");
 });
