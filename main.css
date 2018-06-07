@@ -59,9 +59,12 @@ nav > * {
 }
 
 #nav-name {
+	margin-right: 1rem;
+}
+
+nav a {
 	color: #555d6d;
 	text-decoration: none;
-	margin-right: 1rem;
 }
 
 nav ul li {
