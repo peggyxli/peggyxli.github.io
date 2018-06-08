@@ -127,8 +127,19 @@ section {
 
 .card-wrapper {
 	padding: .75rem .75rem;
-	width: 33.33%;
-	min-width: 350px;
+	width: 100%;
+}
+
+@media screen and (min-width: 641px) {
+	.card-wrapper {
+		width: 50%
+	}
+}
+
+@media screen and (min-width: 1008px) {
+	.card-wrapper {
+		width: 33.33%
+	}
 }
 
 .card {
