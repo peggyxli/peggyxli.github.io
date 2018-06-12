@@ -204,12 +204,12 @@ section {
 	outline: 0;
 }
 
-.rotate-me {
-	transform: rotate(-0.5turn);
-}
-
 .card i {
 	float: left;
+}
+
+.rotate-me {
+	transform: rotate(-0.5turn);
 }
 
 .card li {
