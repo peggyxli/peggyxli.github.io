@@ -1,4 +1,4 @@
-$(".card button").click(function() {
-    $(this).parent().next().stop(true).slideToggle(500);
-    $(this).toggleClass("rotate-me");
+$(".card-header").click(function() {
+    $(this).next().stop(true).slideToggle(500);
+    $(this).find("i").toggleClass("rotate-me");
 });

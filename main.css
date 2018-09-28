@@ -178,6 +178,7 @@ section {
 	margin-top: .75rem;
 	padding-top: .75rem;
 	padding-bottom: .75rem;
+	cursor: pointer;
 }
 
 .card h3 {
